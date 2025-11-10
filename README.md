@@ -38,3 +38,22 @@
 ![HTTPS certificate details](assets/https-certificate-details.png)
 *Figure — TLS certificate for `www.dvwa.local` configured on SafeLine WAF. Uses a 4096-bit RSA key, issued by WIT, and valid for one year. Confirms encrypted HTTPS traffic between Kali and the DVWA server.*
 
+### WAF Configuration & Security Testing
+
+After deploying DVWA behind the SafeLine WAF, I enabled rate-limiting and bot-prevention rules to detect high-frequency attacks and automated traffic. These settings allowed the WAF to intercept requests and require verification when suspicious behavior was detected.
+
+#### Rate-Limit Rule Configuration
+![Rate Limit Rule](assets/cc-protection-rate-limit-settings.png)
+*Enabled High-Frequency Access Restrictions. Configured the WAF to trigger human-machine verification if more than **100 requests** occur within **10 seconds** from a single IP.*
+
+#### CC Protection Dashboard
+![CC Protection Dashboard](assets/cc-protection-dashboard.png)
+*Overview of active CC protection controls for www.dvwa.local — including request frequency limits, attack restrictions, and error-based blocking.*
+
+#### Frequency-Limit Blocks
+![Frequency Limit Logs](assets/frequency-limit-blocks.png)
+*The WAF successfully intercepted traffic bursts to DVWA. Repeated fast visits triggered human-machine verification for **3 minutes**, proving the rule worked.*
+
+#### Human-Machine Verification Logs
+![Human Machine Verification](assets/human-machine-verification.png)
+*Shows individual IP addresses being flagged and challenged, confirming that the application is protected against automated scanning or bot-style traffic.*

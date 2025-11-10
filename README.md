@@ -28,3 +28,9 @@
 
 ![Generating SSL certificate](assets/openssl-generate-cert.png)
 *Figure — Created a 4096-bit RSA private key and certificate signing request (CSR) using OpenSSL. Certificate used to enable HTTPS traffic through the SafeLine WAF.*
+
+![Adding DVWA as a protected application in SafeLine WAF](assets/waf-add-dvwa-application.png)
+*Figure — Configured DVWA as a protected application in SafeLine WAF using HTTPS on port 443. Traffic is reverse-proxied to the backend server (`http://10.220.38.130:8080`) with the custom certificate added earlier.*
+
+![DVWA protected by SafeLine WAF](assets/waf-protection-mode.png)
+*Figure — SafeLine WAF showing DVWA (`www.dvwa.local`) actively protected over HTTPS on port 443. All inbound requests and intercepts will be logged and analyzed here.*

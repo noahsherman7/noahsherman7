@@ -24,7 +24,7 @@
 *Figure — SafeLine WAF installed and accessible through the management dashboard. Ready to monitor and protect the DVWA web application.*
 
 ![DVWA reachable from Kali](assets/dvwa-login-kali.png)
-*Figure — DVWA login page loaded from the Kali attacker VM via `http://10.220.38.130:8080`. Confirms connectivity before running SQL injection tests.*
+*Figure — DVWA login page loaded from the Kali attacker VM via `http://10.220.38.130:8080`. Confirms connectivity before running tests.*
 
 ![Generating SSL certificate](assets/openssl-generate-cert.png)
 *Figure — Created a 4096-bit RSA private key and certificate signing request (CSR) using OpenSSL. Certificate used to enable HTTPS traffic through the SafeLine WAF.*

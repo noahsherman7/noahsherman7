@@ -34,3 +34,7 @@
 
 ![DVWA protected by SafeLine WAF](assets/waf-protection-mode.png)
 *Figure — SafeLine WAF showing DVWA (`www.dvwa.local`) actively protected over HTTPS on port 443. All inbound requests and intercepts will be logged and analyzed here.*
+
+![HTTPS certificate details](assets/https-certificate-details.png)
+*Figure — TLS certificate for `www.dvwa.local` configured on SafeLine WAF. Uses a 4096-bit RSA key, issued by WIT, and valid for one year. Confirms encrypted HTTPS traffic between Kali and the DVWA server.*
+

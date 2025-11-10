@@ -16,3 +16,5 @@
 ### SafeLine WAF install
 ![SafeLine WAF installer running](assets/safeline-install.png)
 *Figure — Running the SafeLine WAF installer script (`manager.sh`). Installer menu prompts to install/upgrade/uninstall; run as root to install the WAF.*
+![Apache config directory](assets/apache-config-dir.png)
+*Figure — Apache installed; `/etc/apache2` shows `sites-available`, `sites-enabled`, and `mods-enabled` (web server ready to host DVWA).*

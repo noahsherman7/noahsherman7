@@ -57,3 +57,9 @@ After deploying DVWA behind the SafeLine WAF, I enabled rate-limiting and bot-pr
 #### Human-Machine Verification Logs
 ![Human Machine Verification](assets/human-machine-verification.png)
 *Shows individual IP addresses being flagged and challenged, confirming that the application is protected against automated scanning or bot-style traffic.*
+
+### Results & Takeaways
+- DVWA was successfully deployed and reachable from an attacker machine over HTTP and HTTPS.
+- SafeLine WAF was installed as a reverse proxy, encrypted with a 4096-bit RSA TLS certificate.
+- Automated rate-limit and high-frequency access rules blocked rapid requests from the attacker.
+- Human-machine verification was triggered, proving that the WAF actively protected the application.

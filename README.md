@@ -10,3 +10,9 @@
 *Figure — Cloned DVWA into `/var/www/html`, set ownership and permissions, and copied `config.inc.php` to prepare DB credentials.*
 ![DVWA MySQL setup](assets/dvwa-mysql-setup.png)
 *Figure — Created `dvwa` database and `dvwa_user` with granted privileges (sensitive passwords redacted).*
+### Hosts mapping on attacker
+![Kali /etc/hosts mapping dvwa.local](assets/kali-hosts-dvwa.png)
+*Figure — Added `10.220.38.150 dvwa.local` to `/etc/hosts` on the attacker so `http://dvwa.local` resolves to the Ubuntu DVWA server during testing.*
+### SafeLine WAF install
+![SafeLine WAF installer running](assets/safeline-install.png)
+*Figure — Running the SafeLine WAF installer script (`manager.sh`). Installer menu prompts to install/upgrade/uninstall; run as root to install the WAF.*

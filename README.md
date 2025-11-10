@@ -16,9 +16,15 @@
 ### SafeLine WAF install
 ![SafeLine WAF installer running](assets/safeline-install.png)
 *Figure — Running the SafeLine WAF installer script (`manager.sh`). Installer menu prompts to install/upgrade/uninstall; run as root to install the WAF.*
+
 ![Apache config directory](assets/apache-config-dir.png)
 *Figure — Apache installed; `/etc/apache2` shows `sites-available`, `sites-enabled`, and `mods-enabled` (web server ready to host DVWA).*
+
 ![SafeLine WAF dashboard](assets/safeline-dashboard.png)
 *Figure — SafeLine WAF installed and accessible through the management dashboard. Ready to monitor and protect the DVWA web application.*
+
 ![DVWA reachable from Kali](assets/dvwa-login-kali.png)
 *Figure — DVWA login page loaded from the Kali attacker VM via `http://10.220.38.130:8080`. Confirms connectivity before running SQL injection tests.*
+
+![Generating SSL certificate](assets/openssl-generate-cert.png)
+*Figure — Created a 4096-bit RSA private key and certificate signing request (CSR) using OpenSSL. Certificate used to enable HTTPS traffic through the SafeLine WAF.*

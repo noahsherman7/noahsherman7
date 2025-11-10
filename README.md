@@ -44,7 +44,7 @@ After deploying DVWA behind the SafeLine WAF, I enabled rate-limiting and bot-pr
 
 #### Rate-Limit Rule Configuration
 ![Rate Limit Rule](assets/cc-protection-rate-limit-settings.png)
-*Enabled High-Frequency Access Restrictions. Configured the WAF to trigger human-machine verification if more than **100 requests** occur within **10 seconds** from a single IP.*
+*Enabled High-Frequency Access Restrictions. I configured the WAF to trigger human-machine verification if more than **5 requests** occur within **3 seconds** from a single IP.*
 
 #### CC Protection Dashboard
 ![CC Protection Dashboard](assets/cc-protection-dashboard.png)
